@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root { --ink: #17221e; --muted: #5e6d66; --cream: #f5f1e8; --paper: #fffdf8; --green: #185c49; --gold: #e1a83b; --line: #dfe5dc; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--cream); font: 16px/1.65 'DM Sans', Arial, sans-serif; }
+.container { width: min(1120px, calc(100% - 3rem)); margin: auto; }
+.site-header { background: var(--green); color: #fff; padding: 1.25rem 0 0; }
+.header-inner { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 2rem; }
+.badge { height: 60px; width: auto; margin-right: 1rem; }
+.brand { color: #fff; font: 700 1.35rem 'Playfair Display', Georgia, serif; text-decoration: none; margin-right: auto; }
+.brand span { display: block; color: #d9eadf; font: 500 .7rem 'DM Sans', Arial, sans-serif; letter-spacing: .14em; text-transform: uppercase; }
+.motto { color: #f8d88d; font-style: italic; margin: 0; }
+nav { display: flex; gap: .25rem; width: 100%; border-top: 1px solid rgba(255,255,255,.16); margin-top: .35rem; padding: .5rem 0; }
+nav a { color: #e4f0e9; padding: .55rem .8rem; text-decoration: none; border-radius: 4px; }
+nav a:hover, nav a.active { color: #fff; background: rgba(255,255,255,.14); }
+h1, h2, h3 { line-height: 1.15; margin: 0 0 .8rem; font-family: 'Playfair Display', Georgia, serif; }
+h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); max-width: 760px; }
+h2 { font-size: clamp(1.8rem, 3vw, 2.7rem); }
+h3 { font-size: 1.35rem; }
+p { margin: 0 0 1rem; }
+.eyebrow { color: var(--gold); font-size: .75rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.hero { min-height: 560px; display: grid; align-items: center; color: #fff; background: linear-gradient(90deg, rgba(10,38,29,.88), rgba(10,38,29,.3)), url('Images/muno.jpg') center/cover; }
+.hero-content { padding: 5rem 0; }.hero-content > p:not(.eyebrow) { max-width: 560px; font-size: 1.1rem; color: #e9f0ea; }
+.button { display: inline-block; border: 0; border-radius: 3px; padding: .8rem 1.35rem; color: #fff; background: var(--gold); font: 700 .9rem 'DM Sans', Arial, sans-serif; text-decoration: none; cursor: pointer; }
+.button:hover { background: #bf8620; }.section-space { padding-top: 5rem; padding-bottom: 5rem; }
+.intro { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; }.intro > p { color: var(--muted); font-size: 1.12rem; }
+.cards, .subject-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }.card, .subject, .content-card, .quote-card, .news-card, .contact-form { background: var(--paper); border: 1px solid var(--line); padding: 1.75rem; }
+.card-number { color: var(--gold); font-weight: 700; }.card p, .subject p, .content-card p, .quote-card p, .news-card p { color: var(--muted); }
+.site-footer { background: var(--ink); color: #cbd5ce; padding: 1.4rem 0; font-size: .85rem; }.site-footer p { margin: 0; }
+.page-banner { padding: 5rem 0 4rem; background: var(--green); color: #fff; }.page-banner p:not(.eyebrow) { color: #dce9df; }
+.content-grid, .contact-layout, .news-layout { display: grid; grid-template-columns: 1.35fr .65fr; gap: 1.5rem; }.quote-card { background: var(--green); color: #fff; align-self: start; }.quote-card p { color: #dce9df; }.quote { color: #f8d88d !important; font: 700 2rem/1.2 'Playfair Display', Georgia, serif; }
+.values { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1.5rem; border-top: 1px solid var(--line); }.values p, .values li { color: var(--muted); }.check-list { padding-left: 1.2rem; }
+.subject-grid { grid-template-columns: repeat(4, 1fr); }.subject h3 { color: var(--green); }.section-heading { margin-bottom: 2rem; }
+.table-wrap { overflow-x: auto; }table { width: 100%; border-collapse: collapse; background: var(--paper); }caption { text-align: left; color: var(--muted); padding: .75rem 0; }th, td { border: 1px solid var(--line); padding: 1rem; text-align: left; }th { color: var(--green); background: #edf3ec; }
+.news-layout { grid-template-columns: 1fr 1fr; }.event-list article { display: flex; gap: 1.25rem; border-bottom: 1px solid var(--line); padding: 1.25rem 0; }.event-list time { color: var(--green); font-weight: 700; min-width: 4rem; }.event-list h3, .event-list p { margin-bottom: .2rem; }.event-list p { color: var(--muted); }.news-card a, .contact-person a { color: var(--green); font-weight: 700; }.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }.gallery figure { margin: 0; }.gallery img { display: block; width: 100%; height: 130px; object-fit: cover; }.gallery figcaption { background: var(--paper); padding: .6rem; font-size: .85rem; }
+.contact-layout { grid-template-columns: .8fr 1.2fr; }.contact-person { border-left: 3px solid var(--gold); padding-left: 1rem; margin: 1.5rem 0; }.contact-person h3, .contact-person p { margin: 0; }.contact-person p { color: var(--muted); }.contact-form { display: grid; gap: .5rem; }.contact-form p { color: var(--muted); }.contact-form label { font-weight: 600; margin-top: .6rem; }.contact-form input, .contact-form select, .contact-form textarea { width: 100%; border: 1px solid #b9c8be; border-radius: 3px; padding: .75rem; font: inherit; background: #fff; }.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 3px solid #f8d88d; border-color: var(--green); }.contact-form .button { justify-self: start; margin-top: .8rem; }
+.map-section { padding-bottom: 5rem; }.map-frame { overflow: hidden; border: 1px solid var(--line); background: var(--paper); box-shadow: 0 10px 25px rgba(23,34,30,.08); }.map-frame iframe { display: block; width: 100%; height: 360px; border: 0; }
+@media (max-width: 760px) { .container { width: min(100% - 2rem, 1120px); }.header-inner { gap: .5rem 1rem; }.motto { order: 3; width: 100%; }nav { overflow-x: auto; }.hero { min-height: 500px; }.intro, .content-grid, .contact-layout, .news-layout, .values { grid-template-columns: 1fr; }.cards, .subject-grid { grid-template-columns: 1fr 1fr; }.section-space { padding-top: 3.5rem; padding-bottom: 3.5rem; } }
+@media (max-width: 480px) { .cards, .subject-grid { grid-template-columns: 1fr; }nav a { white-space: nowrap; padding: .5rem; }.gallery { grid-template-columns: 1fr; } }
